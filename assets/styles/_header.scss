@@ -1,0 +1,29 @@
+.header {
+    border-bottom: 1px solid $color-primary;
+}
+
+.logo {
+    display: flex;
+}
+
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navbar {
+    > ul {
+        > li {
+            display: inline-block;
+        }
+    }
+}
+
+.navbar > ul > li > a {
+    display: block;
+    padding: 38px 16px;
+    color: #ffffff;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+}

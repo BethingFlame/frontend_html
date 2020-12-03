@@ -1,0 +1,49 @@
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    font-family: $font-primary;
+}
+
+html,
+body {
+    margin: 0;
+}
+
+.clearfix::after {
+    display: block;
+    clear: both;
+    content: "";
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+/** Estilos generales */
+a {
+    color: black;
+}
+
+.mt-10 {
+    margin-top: 10px;
+}
+
+.d-none {
+    display: none !important;
+}
+
+.container {
+    width: 100%;
+    max-width: 1120px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section {
+    height: 100vh;
+    min-height: 800px;
+}
+
+@include make-grid-columns(12);
