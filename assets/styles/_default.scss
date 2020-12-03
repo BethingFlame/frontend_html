@@ -26,6 +26,15 @@ a {
     color: black;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0;
+}
+
 .mt-10 {
     margin-top: 10px;
 }
@@ -44,6 +53,11 @@ a {
 .section {
     height: 100vh;
     min-height: 800px;
+
+    h2 {
+        font-family: 'Poppins', sans-serif;
+        line-height: 4.5rem;
+    }
 }
 
 @include make-grid-columns(12);
