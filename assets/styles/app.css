@@ -34,6 +34,11 @@ a {
   color: black;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 h1,
 h2,
 h3,
@@ -51,11 +56,17 @@ h6 {
   display: none !important;
 }
 
-.container, .section-inicio .slider-nav > ul {
+.container, .products__content, .section-inicio .slider-nav > ul {
   width: 100%;
   max-width: 1120px;
   margin-left: auto;
   margin-right: auto;
+}
+@media only screen and (max-width: 768px) {
+  .container, .products__content, .section-inicio .slider-nav > ul {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
 }
 
 .section, .section-about {
@@ -184,22 +195,41 @@ h6 {
   [class*=col-] {
     width: 100%;
   }
+
+  [class*=col-offset-] {
+    margin-left: 0;
+  }
 }
 .header {
   border-bottom: 1px solid #e0752f;
-  position: fixed;
+  position: absolute;
+  z-index: 1000;
   width: 100%;
+  transition: all 0.5s ease 0s;
 }
-
-.logo {
+.header.header--fixed {
+  top: 0;
+  position: fixed;
+  background-color: #e0752f;
+}
+.header.header--fixed .navbar > ul > li > a {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.header .container, .header .products__content, .header .section-inicio .slider-nav > ul, .section-inicio .header .slider-nav > ul {
   display: flex;
+  align-items: center;
 }
 
 .navbar {
   display: flex;
   justify-content: flex-end;
+  flex: 1 1 auto;
 }
-
+.navbar > ul {
+  margin: 0;
+  padding: 0;
+}
 .navbar > ul > li {
   display: inline-block;
 }
@@ -239,6 +269,8 @@ h6 {
   color: white;
   text-decoration: none;
   background-color: #e0752f;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
   border-radius: 25px;
   font-size: 1.6rem;
   padding: 15px 30px;
@@ -270,6 +302,8 @@ h6 {
   outline: none;
   background-color: white;
   opacity: 0.3;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
   border-radius: 25px;
 }
 .section-inicio .slider-nav > ul > li > a.slider-nav--active {
@@ -284,10 +318,7 @@ h6 {
 }
 
 .products__content {
-  width: 100%;
   height: 552px;
-  max-width: 1120px;
-  margin: auto;
   background-image: url("../images/section3-image.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -338,6 +369,11 @@ h6 {
 .section-about .about-content {
   position: relative;
   padding: 50px 0;
+}
+@media only screen and (max-width: 768px) {
+  .section-about .about-content {
+    padding-left: 50px;
+  }
 }
 .section-about .about-content::after {
   content: "";

@@ -29,7 +29,7 @@
             color: white;
             text-decoration: none;
             background-color: $color-primary;
-            border-radius: 25px;
+            @include border-radius(25px);
             font-size: 1.6rem;
             padding: 15px 30px;
         }
@@ -63,7 +63,7 @@
                     outline: none;
                     background-color: white;
                     opacity: 0.3;
-                    border-radius: 25px;
+                    @include border-radius(25px);
 
                     &.slider-nav--active {
                         background-color: $color-primary;

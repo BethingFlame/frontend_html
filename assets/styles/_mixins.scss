@@ -20,6 +20,9 @@
         [class*="col-"] {
             width: 100%;
         }
+        [class*="col-offset-"] {
+            margin-left: 0;
+        }
     }
 }
 

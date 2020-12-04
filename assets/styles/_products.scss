@@ -5,10 +5,9 @@
 }
 
 .products__content {
-    width: 100%;
+    @extend .container;
+    
     height: 552px;
-    max-width: 1120px;
-    margin: auto;
     background-image: url("../images/section3-image.png");
     background-repeat: no-repeat;
     background-size: cover;
