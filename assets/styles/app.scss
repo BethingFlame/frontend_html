@@ -2,11 +2,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 
 @import "variables";
+
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
 @import "mixins";
 
 @import "default";
 @import "header";
 
 @import "inicio";
-@import "products";
 @import "about";
+@import "products";
+@import "services";

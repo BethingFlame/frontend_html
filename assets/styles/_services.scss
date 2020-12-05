@@ -1,0 +1,56 @@
+.section-services {
+    @extend .section;
+
+    padding-top: 13em;
+    background-image: url("../images/section4-image.png");
+    // background-size: 52% auto;
+    background-position: right;
+    background-repeat: no-repeat;
+    max-height: 768px;
+    min-height: auto;
+    padding: 0;
+
+    .container, .row {
+        height: 100%;
+    }
+
+    .row {
+        align-items: center;
+    }
+
+    .accordion {
+        @include border-radius(4px 0);
+
+        .card-header {
+            .btn {
+                position: relative;
+                padding: 20px;
+                color: #5F6368;
+                font-size: 1.6rem;
+    
+                &::after {
+                    content: url(../images/icon-feather-chevron-up.svg);
+                    position: absolute;
+                    width: 20px;
+                    height: 20px;
+                    right: 10px;
+                }
+    
+                &.collapsed {
+                    &::after {
+                        content: url(../images/icon-feather-chevron-down.svg);
+                        position: absolute;
+                        width: 20px;
+                        height: 20px;
+                        right: 10px;
+                    }
+                }
+            }
+        }
+
+        .card-body {
+            padding: 40px;
+            font-size: 1.6rem;
+        }
+    }
+}
