@@ -19,36 +19,29 @@
     }
 
     .accordion {
+        background-color: #fff;
         @include border-radius(4px 0);
 
-        .card-header {
-            .btn {
+        .accordion-header {
+            .accordion-button {
                 position: relative;
                 padding: 20px;
                 color: #5F6368;
                 font-size: 1.6rem;
+                width: 100%;
+                text-align: left;
     
                 &::after {
-                    content: url(../images/icon-feather-chevron-up.svg);
-                    position: absolute;
-                    width: 20px;
-                    height: 20px;
-                    right: 10px;
+                    background-image: url(../images/icon-feather-chevron-up.svg);
                 }
     
-                &.collapsed {
-                    &::after {
-                        content: url(../images/icon-feather-chevron-down.svg);
-                        position: absolute;
-                        width: 20px;
-                        height: 20px;
-                        right: 10px;
-                    }
+                &:not(.collapsed)::after {
+                    background-image: url(../images/icon-feather-chevron-down.svg);
                 }
             }
         }
 
-        .card-body {
+        .accordion-body {
             padding: 40px;
             font-size: 1.6rem;
         }
