@@ -2,7 +2,7 @@
   "name": "html-code",
   "version": "1.0.0",
   "description": "",
-  "main": "index.html",
+  "main": "index.js",
   "directories": {
     "example": "examples"
   },
@@ -20,6 +20,6 @@
   },
   "homepage": "https://github.com/joseamietta/html-code#readme",
   "dependencies": {
-    "bootstrap": "^4.5.3"
+    "bootstrap": "^5.0.0-beta1"
   }
 }

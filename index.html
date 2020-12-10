@@ -215,7 +215,10 @@
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script>
         $(document).ready(function () {
+            // get header height (with margin, padding and border)
             var headerh = $('.header').outerHeight();
+
+            // on window scroll check the header height and add or remove class
             $(window).scroll(function () {
                 if ($(document).scrollTop() >= headerh) {
                     $('.header').addClass('header--fixed');
@@ -239,7 +242,7 @@
                     // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
                     $('html, body').animate({
                         scrollTop: $(hash).offset().top
-                    }, 800, function () {
+                    }, 200, function () {
 
                         // Add hash (#) to URL when done scrolling (default click behavior)
                         window.location.hash = hash;
