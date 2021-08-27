@@ -1,25 +1,23 @@
 {
-  "name": "html-code",
+  "name": "frontend_html",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "directories": {
-    "example": "examples"
+  "description": "Full-Stack",
+  "main": "index.html",
+  "dependencies": {
+    "bootstrap": "^5.1.0"
   },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/joseamietta/html-code.git"
+    "url": "git+https://github.com/BethingFlame/frontend_html.git"
   },
-  "author": "",
+  "author": "Jorge Plua",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/joseamietta/html-code/issues"
+    "url": "https://github.com/BethingFlame/frontend_html/issues"
   },
-  "homepage": "https://github.com/joseamietta/html-code#readme",
-  "dependencies": {
-    "bootstrap": "^5.0.0-beta1"
-  }
+  "homepage": "https://github.com/BethingFlame/frontend_html#readme"
 }
