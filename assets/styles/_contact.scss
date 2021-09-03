@@ -1,64 +1,67 @@
-.section-contact {
-    position: relative;
-    background: linear-gradient(90deg, #f2f4f1 75%, #dce1da 25%);
-    padding-top: 100px;
-    padding-bottom: 100px;
-    img {
-        position: absolute;
-        top: 10em;
-        left: 100em;
-        height: 400px;
-        background: transparent url('../images/contact-image.png') 0% 0% no-repeat padding-box;
-        opacity: 1;
-        background-position: right;
-        background-repeat: no-repeat;
-    }
-    button {
-        top: 3568px;
-        left: 101px;
-        width: 144px;
-        height: 48px;
-        background: var(--unnamed-color-e0752f) 0% 0% no-repeat padding-box;
-        background: #E0752F 0% 0% no-repeat padding-box;
-        border-radius: 25px;
-        opacity: 1;
-    }
-    .contact_span {
-        top: 0px;
-        left: 0px;
-        width: 245px;
-        height: 55px;
-        font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-600) var(--unnamed-font-size-39)/var(--unnamed-line-spacing-45) var(--unnamed-font-family-poppins);
-        letter-spacing: var(--unnamed-character-spacing-0-55);
-        color: var(--unnamed-color-343434);
-        text-align: left;
-        font: normal normal 600 39px/45px Poppins;
-        letter-spacing: 0.55px;
-        color: #343434;
-    }
-    h3 {
-        top: 45px;
-        left: 0px;
-        width: 285px;
-        height: 55px;
-        font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-600) var(--unnamed-font-size-39)/var(--unnamed-line-spacing-45) var(--unnamed-font-family-poppins);
-        letter-spacing: var(--unnamed-character-spacing-0-55);
-        color: var(--unnamed-color-e0752f);
-        text-align: left;
-        font: normal normal 600 39px/45px Poppins;
-        letter-spacing: 0.55px;
-        color: #E0752F;
-    }
-}
-
-.contact__content {
-    top: 3271px;
-    left: 101px;
-    width: 471px;
-    height: 345px;
-    opacity: 1;
-}
-
-.form-control {
-    background-color: #F2F4F1;
-}
+        .section-contact {
+            display: flex;
+            position: relative;
+            background: linear-gradient(90deg, #f2f4f1 75%, #dce1da 25%);
+            padding-top: 100px;
+            padding-bottom: 100px;
+            img {
+                @extend .container;
+                background-image: transparent url('../images/contact-image.png') 0% 0% no-repeat padding-box;
+                background-repeat: no-repeat;
+                background-size: cover;
+                position: relative;
+            }
+            button {
+                top: 3568px;
+                left: 101px;
+                width: 144px;
+                height: 48px;
+                border: none;
+                background: var(--unnamed-color-e0752f) 0% 0% no-repeat padding-box;
+                background: #E0752F 0% 0% no-repeat padding-box;
+                border-radius: 25px;
+                opacity: 1;
+            }
+            .button_contact {
+                font-size: large;
+                text-align: center;
+                letter-spacing: 0.22px;
+                color: #FFFFFF;
+                opacity: 1;
+            }
+            .section_contact_image {
+                overflow: hidden;
+            }
+            .contact_span {
+                top: 0px;
+                left: 0px;
+                width: 245px;
+                height: 55px;
+                text-align: left;
+                letter-spacing: 0.55px;
+                color: #343434;
+            }
+            h3 {
+                top: 45px;
+                left: 0px;
+                font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-600) var(--unnamed-font-size-39)/var(--unnamed-line-spacing-45) var(--unnamed-font-family-poppins);
+                letter-spacing: var(--unnamed-character-spacing-0-55);
+                color: var(--unnamed-color-e0752f);
+                text-align: left;
+                font: normal normal 600 39px/45px Poppins;
+                letter-spacing: 0.55px;
+                color: #E0752F;
+            }
+        }
+        
+        .contact__content {
+            top: 3271px;
+            left: 101px;
+            width: 471px;
+            height: 345px;
+            opacity: 1;
+        }
+        
+        .form-control {
+            background-color: #F2F4F1;
+        }
